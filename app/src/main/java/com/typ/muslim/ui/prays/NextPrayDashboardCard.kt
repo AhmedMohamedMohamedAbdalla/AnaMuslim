@@ -167,7 +167,7 @@ class NextPrayDashboardCard : DashboardCard {
 
     override fun toString() = "NextPrayDashboardCard"
 
-     fun onTimeChanged(now: Timestamp) {
+    override  fun onTimeChanged(now: Timestamp) {
          setNextPray(PrayerManager.getNextPray(context))
          refreshUI()
      }

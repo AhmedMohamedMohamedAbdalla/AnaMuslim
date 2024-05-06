@@ -85,3 +85,4 @@ lint/outputs/
 lint/tmp/
 # lint/reports/
 AnaMuslim-ChatGPT ideas.txt
+.DS_STORE

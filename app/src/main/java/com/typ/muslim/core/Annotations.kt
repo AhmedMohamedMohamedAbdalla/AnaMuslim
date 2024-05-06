@@ -14,7 +14,7 @@ annotation class NeedsTesting(val reason: String = "")
 
 @Target(
     AnnotationTarget.FUNCTION,
-    AnnotationTarget.PROPERTY_GETTER
+    AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY
 )
 annotation class BackwardCompatible(val reason: String = "")
 

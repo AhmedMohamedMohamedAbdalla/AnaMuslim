@@ -11,6 +11,7 @@ import com.typ.muslim.enums.FormatPattern
 import com.typ.muslim.features.prays.PrayerManager
 import com.typ.muslim.features.prays.models.Pray
 import com.typ.muslim.features.prays.models.PrayTimes
+import com.typ.muslim.interfaces.TimeChangedListener
 import com.typ.muslim.managers.AMSettings
 import com.typ.muslim.models.Location
 import com.typ.muslim.models.Timestamp
@@ -18,7 +19,7 @@ import com.typ.muslim.ui.core.AnaMuslimActivity
 import com.typ.muslim.utils.stringRes
 import java.util.Calendar
 
-class PraysActivity : AnaMuslimActivity(R.layout.activity_prays) {
+class PraysActivity : AnaMuslimActivity(R.layout.activity_prays), TimeChangedListener {
 
     // Runtime
     private lateinit var nextPray: Pray
@@ -115,8 +116,8 @@ class PraysActivity : AnaMuslimActivity(R.layout.activity_prays) {
         jumpToDate(Timestamp.NOW())
     }
 
-    override fun onTimeChanged(timestamp: Timestamp) {
-        selectedDate = timestamp
+    override fun onTimeChanged(now: Timestamp) {
+        selectedDate = now
 
         initRuntime()
         initUI()

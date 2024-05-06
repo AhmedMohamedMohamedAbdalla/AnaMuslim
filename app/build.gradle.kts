@@ -7,14 +7,14 @@ plugins {
 
 android {
     namespace = "com.typ.muslim"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.typ.muslim"
         minSdk = 23
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
-        versionName = "1.1.2"
+        versionName = "1.1.3"
         multiDexEnabled = true
 
 //        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"

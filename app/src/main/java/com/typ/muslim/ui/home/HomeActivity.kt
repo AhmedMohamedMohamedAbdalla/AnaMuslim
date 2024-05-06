@@ -88,7 +88,7 @@ class HomeActivity : AnaMuslimActivity(R.layout.activity_home), PrayTimeCameList
         return getNextPray(this)
     }
 
-    override fun onTimeChanged(now: Timestamp?) {
+    override fun onTimeChanged(now: Timestamp) {
         // Notify all cards to refresh its runtime and its UI
         homeCards.listed.forEach { card: DashboardCard -> card.onTimeChanged(now) }
     }

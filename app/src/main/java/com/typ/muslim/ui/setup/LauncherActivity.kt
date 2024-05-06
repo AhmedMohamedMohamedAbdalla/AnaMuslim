@@ -32,7 +32,7 @@ class LauncherActivity : AppCompatActivity() {
 //            setKeepOnScreenCondition { shouldWait }
 //        }
         // Init LauncherActivity
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_launcher)
         supportActionBar?.hide() // Hide default ActionBar.

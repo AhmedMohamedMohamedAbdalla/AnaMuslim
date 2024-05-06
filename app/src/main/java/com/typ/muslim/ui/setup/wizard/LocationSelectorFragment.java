@@ -96,7 +96,7 @@ public class LocationSelectorFragment extends Fragment {
         tilManualLocate.getEditText().setOnClickListener(v -> selectLocationLauncher.launch(new Intent(requireContext(), SelectLocationActivity.class)));
         tilGPSLocate.getEditText().setOnClickListener(v -> {
             if (!isGPSLocatingEnabled) {
-                Toast.makeText(getContext(), "GPS location is buddy now and not planned to be fixed until v1.1.10", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "GPS location is buggy now and not planned to be fixed until v1.1.10", Toast.LENGTH_SHORT).show();
                 return;
             }
             // Check if gps location is already set
